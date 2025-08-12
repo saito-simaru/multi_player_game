@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "multi-player-game.sln"
+    "dotnet.defaultSolution": "multi_player_game.sln"
 }

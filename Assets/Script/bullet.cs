@@ -28,4 +28,11 @@ public class bullet : MonoBehaviour
             if (!other.isTrigger) Destroy(gameObject);
         }
     }
+
+    // void Update()
+    // {
+    //     gameObject.transform.Translate(Vector2.up * Time.deltaTime * 12f);
+    //     // ここで弾の向きを調整することも可能
+    //     // gameObject.transform.rotation = Quaternion.LookRotation(Vector3.forward, direction);
+    // }
 }

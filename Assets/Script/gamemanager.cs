@@ -50,6 +50,8 @@ public class gamemanager : MonoBehaviour
         {
             if (p.playerId == 0 && spawn0) p.transform.position = spawn0.position;
             if (p.playerId == 1 && spawn1) p.transform.position = spawn1.position;
+            if (p.playerId == 0 && spawn0) p.transform.localRotation = spawn0.rotation;
+            if (p.playerId == 1 && spawn1) p.transform.localRotation = spawn1.rotation;
         }
     }
 }

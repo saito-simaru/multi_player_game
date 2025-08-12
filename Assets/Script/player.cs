@@ -56,11 +56,12 @@ public class PlayerController2D : MonoBehaviour
     {
         Debug.Log($"ファイアを入力");
         if (Time.time - lastFireTime < fireCooldown) return;
-        Debug.Log($"Player {playerId} fired!");
+        
         lastFireTime = Time.time;
 
         if (bulletPrefab != null && firePoint != null)
         {
+            Debug.Log($"Player {playerId} fired!");
             var go = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
             var brb = go.GetComponent<Rigidbody2D>();
             if (brb != null)
